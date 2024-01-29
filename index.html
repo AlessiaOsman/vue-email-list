@@ -17,10 +17,9 @@
 
 <body>
     <div id="root">
-        <ul>
+        <ul v-if="mailList.length === 10">
             <li v-for="(email, i) in mailList" :key="i">{{email}}</li>
         </ul>
-
     </div>
 </body>
 
